@@ -142,7 +142,7 @@ namespace ColoredDamageTypes
                 {
 					ColoredDamageTypes.Log("Found modded damage type! " + itemToCheck.DamageType.FullName.ToString());
 
-					string dcname = itemToCheck.DamageType.ToString();
+					string dcname = itemToCheck.DamageType.FullName.ToString();
 					zCrossModConfig.DamageType dt = new zCrossModConfig.DamageType(dcname, new Color(255, 255, 255), new Color(255, 160, 80), new Color(255, 100, 30));
 					zCrossModConfig.CrossModDamageConfig_Orig.Add(dcname, dt);
 
